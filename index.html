@@ -5,12 +5,268 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="aaaaa.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <script src="https://kit.fontawesome.com/6824e7bd39.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    /* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+.navbar-toggler{
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #sidebar{
+    display: none;
+  }
+  .navbar-toggler{
+    display: block;
+  }
+  .side-nav{
+    display: none;
+  }
+}
+
+
+
+/* PROFILE SECTION */
+
+@media (max-width: 350px){
+  #profile{
+    img{
+      height: 30vh;
+      width: 30vh;
+    }
+  }
+}
+
+
+/* BUTTONS */
+
+.btn-container {
+  height: 4rem;
+}
+#button{
+  background-color: #21f53a8d;
+  margin: 5px;
+}
+#button:hover{
+  background-color: #21f53a;
+  transform: scale(1.1);
+}
+.social-icons{
+  height: 5rem;
+  align-items: center;
+}
+i{
+  margin: 5px;
+  font-size: 30px;
+}
+
+.contact-container{
+  position: relative;
+  padding-left: 5%;
+  height: 50vh;
+  width: 50vh;
+  display: grid;
+  z-index: 2;
+ background-color: rgb(255, 255, 255);
+ display: none;
+ border-radius: 5px;
+ background: linear-gradient(rgb(65, 108, 183), rgb(85, 69, 224), rgb(35, 126, 201));
+}
+.input{
+  display: grid;
+  margin-top: 3vh;
+
+}
+#Submit{
+  width: 15vh;
+}
+
+.contact-input{
+  height: 6vh;
+  width: 80%;
+  border-radius: 5px;
+  padding-left: 3px;
+}
+#Message{
+  height: 10vh;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+  height: auto;
+  padding-top: 3rem;
+}
+
+.about-containers {
+  margin-bottom: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.icon-mav{
+  height: 3rem;
+}
+
+.icon-sel{
+  height: 1.8rem;
+}
+
+.icon-man{
+  height: 2rem;
+}
+
+/* skills SECTION */
+#Skills{
+  height: auto;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+#projects{
+  height: auto;
+}
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  width: 40%;
+  height: 40%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+#contact{
+  height: auto;
+}
+.Available{
+  margin-left: 9rem;
+}
+  </style>
   </head>
   <body>
     <nav class="navbar bg-body-tertiary">
@@ -71,7 +327,10 @@
 
 
 
-    <section class="container-fluid row gap-2" id="profile">
+    <section class="container-fluid row gap-2" id="profile" 
+              style="justify-content: space-around;
+                    height: 40rem;
+                    align-content: center;">
       <div class="section__pic-container col">
         <img src="./Icons/IMG20230711173924.JPG" id="profileimg" style="border-radius: 50%; width: 50vh; height: 50vh;
         margin-left: 2rem;;" alt="Sai sujith profile picture" />
