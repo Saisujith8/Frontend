@@ -46,7 +46,7 @@ p {
 }
 
   
-#img{
+#profileimg{
   border-radius: 50%;
   width: 50vh;
   height: 50vh;
@@ -55,7 +55,7 @@ p {
 }
 
 @media (max-width: 350px){
-    #img{
+    #profileimg{
       height: 30vh;
       width: 30vh;
     }
