@@ -1,160 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="box">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="aaaaa.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/6824e7bd39.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">Sai sujith Kalva</a>
+        <div class="side-nav">
+        <ul class="nav justify-content-end" id="sidebar">
+          <li class="nav-item">
+            <a class="nav-link active text-black" aria-current="page" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-black" href="#Skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-black" href="#contact">Contact</a>
+          </li>
+      </ul>
     </div>
-<div class="resume">
-    <div class="intro-container">
-            <div class="name">
-                <h6>Hello, I am</h6>
-                <h1>KALVA SAI SUJITH</h1>
-                <H6>And I'm a Frontend Developer and Automation Tester</H6>
-                    <div class="media">
-                            <a href="https://www.linkedin.com/in/sai-sujith-kalva-380850139" target="_blank"><i id="icon" class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/Saisujith8" target="_blank"><i id="icon" class="fa-brands fa-github"></i></a>
-                            <a href="https://wa.me/07013512609" target="_blank"><i id="icon" class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-            </div>           
-            <div class="Contact">
-                <p><b>Email: kalvasaisujith123@gmail.com</b></p>
-                <p><b>Mobile no.: +91 7013512609</b></p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sai sujith kalva</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">contact me</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <section class="container-fluid row gap-2" id="profile">
+      <div class="section__pic-container col">
+        <img src="./image/IMG_20230711_173924.jpg" alt="Sai sujith profile picture" />
+      </div>
+      <div class="section__text container-fluid col">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sai sujith Kalva</h1>
+        <p class="section__text__p2">and I'am a Frontend Developer and Software Tester</p>
+        <div class="btn-container">
+          <button
+            class="btn" id="button"
+            onclick="window.open('https://drive.google.com/file/d/1ZhKt94F4doNpLiMHqj3IUvbY2ExtWyRO/view?usp=drive_link')"
+          >
+            Download CV
+          </button>
+          <button class="btn" onclick="hideShow()" id="button">
+            Get in Touch
+          </button>
+
+          <div class="contact-container container" id="mycontact">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+              <div class="contact-left-title">
+                <h2 class="text-danger">Get in Touch</h2>
+              </div>
+              <div class="input">
+                <input type="hidden" name="access_key" value="cdfc2e6a-4a08-4ce2-9b09-0ea94174df18">
+              <input type="text" name="name" placeholder="Your Name" class="contact-input my-1" required>
+              <input type="email" name="email" placeholder="Your Email" class="contact-input my-1" required>
+              <textarea name="Message" id="Message" placeholder="Your Message" class="contact-input my-1" required></textarea>
+              <button type="Submit" id="Submit" class="btn btn-danger">Submit</button>
+              <p class="text-black my-1">You can Email me from this.</p>
             </div>
-    </div>
-    <div class="profile">
-        <div class="profiles">
-        <h3>Profile:</h3>
-        <p> To be associated with a progressive organization which can provide me with a dynamic work sphere to extract
-            my inherent as a Professional use and develop my aptitude to further the organization’s objective and also
-            attain my
-            career targets in the process.</p>
+            </form>
+            <div class="contact-right"></div>
+          </div>
         </div>
-    </div>
-    <div class="education">
-            <h3>Education:</h3>
-            <h5>Graduation</h5>
-            <p>Bachelor of Technology (Mechanical Engineering).</h3>
-            <p>Indur Institute of Engineering and Technology, Siddipet, Telangana.</p>
-            <h5>Polytechnic</h5>
-            <p>Diploma in Mechanical Engineering</p>
-            <p>Indur Institute of Engineering and Technology, Siddipet, Telangana.</p> 
-    </div>
-    <div id="program">
-        <h3>Programming Languages</h3>
-        <div class="program">
-            <div class="Language">
-                <p>Javascript</p>
-                <p>Java-For Testing</p>
-                <p>SQL-Data base Language</p>
+        <div class="social-icons my-4 mx-3" id="socials-container">
+          <a href="https://www.linkedin.com/in/sai-sujith-kalva-380850139" alt="_blank"><i class="fa-brands fa-linkedin text-primary"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope text-danger"></i></a>
+          <a href="https://github.com/Saisujith8" alt="_blank"><i class="fa-brands fa-github text-black"></i></a>
+          <a href="https://wa.me/07013512609" target="_blank"><i class="fa-brands fa-whatsapp text-success"></i></a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="About-me container-fluid">
+      <p class="section__text__p1 text-center">Get To Know More</p>
+      <h1 class="title text-center">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers w-50 align-self-center">
+            <div class="details-container">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Education</h3>
+              <p class="text-black">Indur Institute of Engineering and Technology</p>
+              <p>B.Tech<br />Mechanical Engineering</p>
             </div>
-            <div class="star">
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="Skills" class="container-fluid mx-3">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container row">
+        <div class="about-containers row gap-2">
+          <div class="details-container col">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+              <i class="fa-brands fa-html5 text-danger"></i>
                 <div>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+              <i class="fa-brands fa-css3-alt text-primary"></i>
                 <div>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-bootstrap" id="bootstrap-icon"></i>
                 <div>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <h3>Bootstrap 5.3</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-js"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-react"></i>
+                <div>
+                  <h3>Reactjs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-database"></i>
+                <div>
+                  <h3>My SQL-Server</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container col">
+            <h2 class="experience-sub-title">Software Testing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./image/83825-200.png"
+                  alt="Experience icon"
+                  class="icon-man"
+                />
+                <div>
+                  <h3>Manual Testing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./image/selenium-icon-512x496-obrnvg2v.png"
+                  alt="Experience icon"
+                  class="icon-sel"
+                />
+                <div>
+                  <h3>Automation Testing in Selenium with java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./image/maven.svg"
+                  alt="Experience icon"
+                  class="icon-mav"
+                />
+                <div>
+                  <h3>Maven</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-git"></i>
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-    </div>
-    <div id="skills">
-        <div class="Technologies">
-            <h3>Technologies:</h3>
-            <p>Frontend Development</p>
-            <p>Automation Selenium Testing with Java</p>
-            <P>Microsoft SQL Server</P>
-            <p>AWS Cloud DevOps</p>
+      </div>
+    </section>
+
+    
+    <section id="projects" class="container-fluid">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container container-fluid">
+        <div class="about-containers my-5 gap-2 row">
+          <div class="details-container color-container col">
+            <div class="article-container">
+              <img
+                src="./image/images.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container col">
+            <div class="article-container">
+              <img
+                src="./image/images.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container col">
+            <div class="article-container">
+              <img
+                src="./image/images.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="skills">
-            <p>HTML5, CSS3, Bootstrap, ReactJS</p>
-            <p>Selenium, Automation Testing, Maven, TestNG, Appium, Test cases and Test scripts, Web Application
-                Testing</p>
-            <p>Operators, Joins, Clauses</p>
-            <p>Git, Github, Docker, Jenkins, Cucumber, Ansible, Kubernetes, Terraform, Sonarqube, CI/CD Pipeline</p>
-        </div>        
-    </div>
-    <div class="projects">
-        <div class="testing">
-            <h6>Testing an Automobile Service Site with Selenium</h6>
-            <h6>Language: JAVA</h6>
-            <p>Opening Automobile Service site using web drivers and testing the login screen with username and password in different browsers</p>
-            <p>Testing login widgets like data pickers, tabs, slider and interactive actions like draggable, resizable and selectors, etc.</p>
-            <p>Using intelligence field selection feature to use IDs, name or Xpath to Test and fill registration form and submission.</p>
-            <p>Using remote control server  and java robot to automatically launch and kill browsers and test frames, windows, drop-down menu, alert boxes and to upload files and download.</p>
+      </div>
+    </section>
+
+  
+
+    <footer class="contact-me text-white text-center bg-dark" id="contact">
+      <div class="container p-4">
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contact Me</h5>
+  
+            <div class="mt-4">
+              <a type="button" class="btn btn-floating btn-primary btn-lg" id="foot-button"><i class="fab fa-facebook-f"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" id="foot-button"><i class="fab fa-instagram"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" id="foot-button"><i class="fab fa-x"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" id="foot-button"><i class="fab fa-google"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+  
+            <div class="form-outline form-white mb-4">
+              <input type="text" id="formControlLg" class="form-control form-control-lg" />
+              <label class="form-label" for="formControlLg">Search</label>
+            </div>
+  
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">H.no: 11-4-6, Bharath nagar, Siddipet.</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">kalvasaisujith123@gmail.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+91 7013512609</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Available</h5>
+  
+            <table class="Available text-white">
+              <tbody class="fw-normal">
+                <tr>
+                  <td>Mon - Thu:</td>
+                  <td>8am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat:</td>
+                  <td>8am - 5pm</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>8am - 5pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="DevOps">
-            <h6>Using Docker as containerization</h6>
-            <h6>Language: JAVA</h6>
-            <p> Designed and implemented a cloud-based infrastructure for a legacy system.</p>
-            <p>Implementing modern AWS tooling into EC@ images that enabled developers to perform 
-                approved troubleshooting as defined by their role, reducing mean time.</p>
-            <p>Monitored system logs and identified potential issues, resulting in a 25% reduction 
-                in downtime and a 20% increase in system uptime.</p>
-            <p>Developed and maintained scripts to automate system administration tasks, 
-                reducing manual workload</p>
-            <p>Using Docker files containerising the e build every time to increase the system 
-                efficiency by 25%</p>
-            <p>Implemented security best practices and conducted regular vulnerability 
-                assessments, ensuring system integrity and compliance with industry standards.</p>
-            <p>Researched and evaluated new technologies to improve system performance, 
-                resulting in a 10% reduction in system response time and a 5% increase in overall 
-                system efficiency</p>
-        </div>            
-    </div>
-    <footer class="footer">
-        <div class="address">
-            <h3>ADDRESS</h3>
-            <p>H.no: 11-4-6;</p>
-            <p>Bharath Nagar,</p>
-            <p>Siddipet, 502103</p>
-            <p>Telangana,</p>
-            <p>India</p>
-        </div>
-        <div class=" nav-Contact">
-            <h3>CONTACT</h3>
-            <p>Mobile no.: +91 7013512609</p>
-            <p>Email: kalvasaisujith123@gmail.com</p>
-        </div>
-        <div class="link">
-            <h3>Links</h3>
-                <a href="https://www.linkedin.com/in/sai-sujith-kalva-380850139" target="_blank"><i id="link" class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Saisujith8" target="_blank"><i id="link" class="fa-brands fa-github"></i></a>
-                <a href="https://wa.me/07013512609" target="_blank"><i id="link" class="fa-brands fa-whatsapp"></i></a>
-        </div>
-</div>
-</footer>
-</body>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="#">ABCD.com</a>
+      </div>
+    </footer>
+
+
+
+
+<script type="text/JavaScript">
+  function hideShow(){
+    let x=document.getElementById('mycontact');
+
+    if(x.style.display=='block'){
+      x.style.display='none';
+    }
+    else {
+      x.style.display='block';
+    }
+  }
+</script>
+  </body>
 </html>
